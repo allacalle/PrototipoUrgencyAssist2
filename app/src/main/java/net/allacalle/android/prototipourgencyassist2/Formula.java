@@ -9,7 +9,9 @@ public class Formula
     private String nombreCompleto;
     private String abreviatura;
     private String expresion;
-    private  Parametro parametro ;
+    private  Parametro [] parametros;
+
+    //Aqui empiezan los getter y setters sencillos de la clase.
 
     public String getTipoFormula()
     {
@@ -29,9 +31,6 @@ public class Formula
         return expresion;
     }
 
-    public Parametro getParametro() {
-        return parametro;
-    }
 
     public void setTipoFormula(String tipoFormula) {
         this.tipoFormula = tipoFormula;
@@ -48,10 +47,24 @@ public class Formula
     public void setExpresion(String expresion) {
         this.expresion = expresion;
     }
+//Aqui acaban los getter y setter sencillos de la clase
 
-    public void setParametro(Parametro parametro) {
-        this.parametro = parametro;
+
+    /*
+
+    PROC contarPametros() DEV int
+    REQUIERE:
+    MODIFICA:
+    EFECTOS: Muestra el numero de parametros de una formula
+
+     */
+
+    public int contarParametros()
+    {
+        return parametros.length ;
     }
+
+
 
 
 }
