@@ -47,6 +47,16 @@ public class Formula
     public void setExpresion(String expresion) {
         this.expresion = expresion;
     }
+
+
+    public Parametro[] getParametros() {
+        return parametros;
+    }
+
+    public void setParametros(Parametro[] parametros) {
+        this.parametros = parametros;
+    }
+
 //Aqui acaban los getter y setter sencillos de la clase
 
 
@@ -63,8 +73,6 @@ public class Formula
     {
         return parametros.length ;
     }
-
-
 
 
 }
